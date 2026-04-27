@@ -11,8 +11,6 @@
 
 <body>
 
-<audio id="music" src="audio2.mp3" autoplay loop></audio>
-
 <h1>Our Moments 🖤💖</h1>
 
 <div class="gallery">
@@ -24,7 +22,6 @@
     <img src="foto4.jpg">
 </div>
 
-<!-- FIX BACK BUTTON -->
 <div class="back">
     <a href="index.html" class="btn">Back 🖤</a>
 </div>
@@ -32,6 +29,17 @@
 <div id="popup" class="popup" onclick="closePopup()">
     <img id="popup-img">
 </div>
+
+<!-- 💖 AUDIO TARUH DI SINI -->
+<audio id="music" src="audio2.mp3" autoplay loop></audio>
+
+<!-- 💖 SCRIPT TARUH DI SINI (PALING BAWAH) -->
+<script>
+document.body.addEventListener("click", () => {
+    const music = document.getElementById("music");
+    if (music) music.play();
+}, { once: true });
+</script>
 
 </body>
 </html>
